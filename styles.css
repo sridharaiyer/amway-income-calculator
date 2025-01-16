@@ -1,0 +1,74 @@
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --heading-color: #252729;
+    --box-border-color: #ddd;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #121212;
+        --text-color: white;
+        --heading-color: #a8acae;
+        --box-border-color: #333;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+    text-align: center;
+    color: var(--heading-color);
+}
+
+h2 {
+    margin-top: 20px;
+    color: var(--heading-color);
+}
+
+input {
+    margin: 5px 10px;
+    padding: 5px;
+    width: 100px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--box-border-color);
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--heading-color);
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 15px;
+    background-color: var(--heading-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.frontline {
+    margin-bottom: 10px;
+}
+
+.income-box {
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid var(--box-border-color);
+    border-radius: 5px;
+}
