@@ -30,7 +30,88 @@ h1 {
 h2 {
     margin-top: 20px;
     color: var(--heading-color);
+    text-align: center; /* Center-align all h2 elements */
 }
+
+/* Center-align and increase font size for Personal PV */
+.personal-pv-container {
+    text-align: center;
+    /* Center-align the label and input */
+    margin-bottom: 20px;
+    /* Add space below */
+}
+
+.personal-pv-container label {
+    font-size: 20px;
+    /* Increase label font size */
+    font-weight: bold;
+    /* Make the label bold */
+    margin-right: 10px;
+    /* Add space between label and input */
+}
+
+.personal-pv-container input {
+    font-size: 18px;
+    /* Increase input font size */
+    padding: 8px;
+    /* Add padding to the input */
+    width: 120px;
+    /* Adjust width */
+    text-align: center;
+    /* Center-align the text inside the input */
+}
+
+#frontlines {
+    text-align: center;
+    /* Center-align the content inside the container */
+    margin-top: 20px;
+    /* Add space above the section */
+}
+
+#frontlines h2 {
+    font-size: 22px;
+    /* Increase the font size of the heading */
+    font-weight: bold;
+    /* Make the heading bold */
+    margin-bottom: 15px;
+    /* Add space below the heading */
+}
+
+/* Frontline container and input styles */
+.frontline input {
+    font-size: 18px;
+    /* Increase font size for Group PV inputs */
+    padding: 8px;
+    /* Add padding for better spacing */
+    width: 150px;
+    /* Adjust width of the input */
+    margin-right: 10px;
+    /* Space between input and Remove button */
+}
+
+/* Remove button styles */
+.frontline button {
+    font-size: 16px;
+    /* Increase font size for Remove button */
+    padding: 8px 15px;
+    /* Add padding to make the button larger */
+    background-color: #d9534f;
+    /* Use a red color for the button */
+    color: white;
+    /* White text for better contrast */
+    border: none;
+    /* Remove border */
+    border-radius: 4px;
+    /* Add rounded corners */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+}
+
+.frontline button:hover {
+    background-color: #c9302c;
+    /* Darker red on hover */
+}
+
 
 input {
     margin: 5px 10px;
@@ -71,4 +152,7 @@ button:hover {
     text-align: center;
     border: 1px solid var(--box-border-color);
     border-radius: 5px;
+    margin: 0 auto; /* Center the box horizontally */
+    margin-top: 10px; /* Add spacing above the box */
+    max-width: 300px; /* Optional: Set a max width for the box */
 }
