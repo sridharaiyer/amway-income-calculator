@@ -20,12 +20,19 @@
 
 button {
     margin-top: 10px;
-    padding: 5px 15px;
+    padding: 10px 20px;
+    /* Increased padding for a larger button */
     background-color: var(--button-bg-color);
     /* Use button-specific color */
     color: white;
     border: none;
     cursor: pointer;
+    font-size: 18px;
+    /* Increase font size */
+    border-radius: 5px;
+    /* Optional: Rounded corners for a modern look */
+    width: 150px;
+    /* Optional: Set a specific width */
 }
 
 button:hover {
