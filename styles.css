@@ -40,6 +40,14 @@ button:hover {
     /* Slightly darker shade for hover effect */
 }
 
+#addFrontline {
+    display: block;
+    /* Ensure it behaves like a block element */
+    margin: 20px auto;
+    /* Center the button horizontally */
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
