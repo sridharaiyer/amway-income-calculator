@@ -3,6 +3,8 @@
     --text-color: black;
     --heading-color: #252729;
     --box-border-color: #ddd;
+    --button-bg-color: #007bff;
+    /* Blue color for buttons */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -11,7 +13,24 @@
         --text-color: white;
         --heading-color: #a8acae;
         --box-border-color: #333;
+        --button-bg-color: #0056b3;
+        /* Darker blue for buttons in dark mode */
     }
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 15px;
+    background-color: var(--button-bg-color);
+    /* Use button-specific color */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* Slightly darker shade for hover effect */
 }
 
 body {
@@ -30,7 +49,8 @@ h1 {
 h2 {
     margin-top: 20px;
     color: var(--heading-color);
-    text-align: center; /* Center-align all h2 elements */
+    text-align: center;
+    /* Center-align all h2 elements */
 }
 
 /* Center-align and increase font size for Personal PV */
@@ -127,18 +147,6 @@ input:focus {
     border-color: var(--heading-color);
 }
 
-button {
-    margin-top: 10px;
-    padding: 5px 15px;
-    background-color: var(--heading-color);
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
 
 .frontline {
     margin-bottom: 10px;
@@ -152,7 +160,30 @@ button:hover {
     text-align: center;
     border: 1px solid var(--box-border-color);
     border-radius: 5px;
-    margin: 0 auto; /* Center the box horizontally */
-    margin-top: 10px; /* Add spacing above the box */
-    max-width: 300px; /* Optional: Set a max width for the box */
+    margin: 0 auto;
+    /* Center the box horizontally */
+    margin-top: 10px;
+    /* Add spacing above the box */
+    max-width: 300px;
+    /* Optional: Set a max width for the box */
+}
+
+/* Styles for the notes section */
+.notes {
+    font-size: 12px;
+    /* Tiny font size */
+    color: grey;
+    /* Light grey color */
+    margin-top: 40px;
+    /* Increased space above the notes */
+    text-align: left;
+    /* Left-align the notes text */
+    line-height: 1.5;
+    /* Add line spacing for readability */
+    max-width: 500px;
+    /* Optional: Set a max width for better layout */
+    margin-left: auto;
+    /* Center-align the notes block */
+    margin-right: auto;
+    /* Center-align the notes block */
 }
